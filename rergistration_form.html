@@ -1,0 +1,103 @@
+<!DOCTYPE html> 
+ 
+<html lang="en" dir="ltr"> 
+ 
+<head> 
+ 
+<meta charset="utf-8"> 
+ 
+<title>Form</title> 
+ 
+<style> 
+ 
+form{ 
+background-color: lavender; 
+font-family: Verdana, Geneva, Tahoma, sans-serif; 
+} 
+ 
+h1{ 
+ 
+background-color:pink; 
+} 
+h3{ 
+background-color:pink; 
+} 
+</style> 
+<script type="text/javascript"> 
+function display() 
+{ 
+var a=document.y.a.value; 
+var b=document.y.b.value; 
+var c=document.y.c.value; 
+var d=document.y.gender.value; 
+var e=document.y.d.value; 
+document.y.data.value=" NAME : "+a+"\n Email Id : "+b+"\n Mobile NUmber : 
+"+c+"\n Gender : "+d+"\n Favourite color : "+e; 
+} 
+</script> 
+</head> 
+<body> 
+<fieldset> 
+ 
+<h1 align="center">REGISTRATION FORM</h1><hr> 
+ 
+<form class="" name="y" action="index.html" method="post" > 
+ 
+<table width="80%"> 
+ 
+<tr> 
+<td><p><label for="a"> Name : </label> 
+ 
+ 
+ 
+<input type="text" name="a" value="" id="a" value="" placeholder="Enter your 
+name"></p></td> 
+</tr> 
+<tr> 
+<td><p><label for="b">Email ID : </label> 
+<input type="email" name="b" id="b" value="" placeholder="Enter your Email 
+Id"></p></td> 
+</tr> 
+
+
+<tr> 
+<td><p><label for="c">Mobile No. : </label> 
+ 
+<input type="text" name="c" id="c" value="" placeholder="Enter you mobile 
+number"></p></td> 
+</tr> 
+<tr> 
+<td><p> Gender : 
+<label for="male">Male</label> 
+<input type="radio" name="gender" id="male" value="male"> 
+ 
+<label for="female">Female</label> 
+<input type="radio" name="gender" id="female" value="female"> 
+ 
+<label for="other">Other</label> 
+ 
+<input type="radio" name="gender" id="other" value="other"></p></td> 
+ 
+</tr> 
+ 
+<tr> 
+ 
+<td><p><label for="d">Favourite Color : </label> 
+ 
+<input type="text" name="d" id="d" value=""></p></td> 
+ 
+</tr> 
+ 
+</table><br> 
+ 
+<input type="button" onclick="display();" name="button" value="SUBMIT" style="background-color:lightgrey","font-color:black"><br> 
+ 
+<h3>YOUR DATA</h3> 
+ 
+<textarea name="data" type="text" rows="8" cols="80"></textarea></fieldset> 
+ 
+</form> 
+ 
+</body> 
+ 
+</html>
